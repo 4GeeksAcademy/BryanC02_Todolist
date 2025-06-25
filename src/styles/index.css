@@ -11,3 +11,7 @@ input:focus {
 .todo-item:hover .delete-btn {
   visibility: visible;
 }
+
+.background{
+  padding-bottom: 300px;
+}

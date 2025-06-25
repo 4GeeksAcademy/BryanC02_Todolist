@@ -20,11 +20,11 @@ const Todolist = () => {
     return (
         <>
             <div className="container border border-dark w-50 border-opacity-25 fw-light bg-white" style={{ height: "50px" }}>
-                <input type="text" onChange={(e) => setTodo(e.target.value)} onKeyDown={handleKeyPress} value={Todo} className="border border-0 fs-3 fw-light" />
+                <input type="text" onChange={(e) => setTodo(e.target.value)} onKeyDown={handleKeyPress} value={Todo} style={{ height: "100%" }} className="border border-0 fs-3 fw-light w-100" />
             </div>
             <div className="">
                 {TodoList.map((item, index) => (
-                    <div key={index} className="todo-item d-flex justify-content-between align-items-center border border-dark w-50 m-auto ps-5 fs-3 pe-2 fw-light border-opacity-25 bg-white" style={{ height: "50px" }}>
+                    <div key={index} className="todo-item d-flex justify-content-between align-items-center border border-dark w-50 m-auto ps-5 fs-3 pe-2 fw-light border-opacity-25 bg-white text-break" style={{ height: "50px", height: "100%" }}>
                         <span>{index + 1}. {item}</span>
                         <button
                             onClick={() => handleDelete(index)}
